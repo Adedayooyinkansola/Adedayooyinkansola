@@ -1,0 +1,1240 @@
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header starts here */
+
+.header {
+    background-color: rgb(252, 237, 239);
+    padding: 8px 0px;
+}
+
+.max-width{
+    width: 100%;
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-info {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 15px;
+}
+
+.contacts-info p {
+    margin-right: 15px;
+}
+
+.contacts-info i {
+    margin-right: 10px;
+}
+
+.contacts-app i {
+    margin-left: 15px;
+    color: #F9A392;
+}
+
+.contacts-app i:hover {
+    color: #f56649;
+}
+
+/* header ends here */
+
+/* home section starts here */
+
+.home {
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-name {
+    font-size: 40px;
+}
+
+.home-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.home-name span {
+    color: #F9A392;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-content ul {
+    list-style: none;
+}
+
+.navbar-content a {
+    margin-right: 55px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-content a:hover {
+    color: #F9A392;
+}
+
+.navbar-content a:active {
+    color: #F9A392;
+}
+
+.li a, .pages-tit {
+    display: inline-block;
+}
+
+.fa-caret-down {
+    margin-left: 7px;
+}
+  
+li.pages {
+    display: inline-block;
+}
+
+.pages-content {
+    background-color: white;
+    width: 13%;
+    padding-top: 35px;
+    display: none;
+    position: absolute;
+}
+
+.pages-content a {
+    margin-left: 25px;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: 100;
+}
+
+.pages-content a:hover {
+    color: #F9A392;
+}
+
+.pages:hover .pages-content {
+    display: block;
+}
+
+.booking p {
+    background-color: #F9A392;
+    padding: 10px;
+}
+
+.booking :hover {
+    background-color: #f56649;
+}
+
+.booking a {
+    text-decoration: none;
+    color: white;
+}
+
+/* home section ends here */
+
+/* picture section starts here */
+
+.picture {
+    width: 100%;
+    background-image: url(../assets/face-image\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: pictures 30s ease-in-out infinite;
+}
+
+@keyframes pictures {
+    10% {background-image:  url(../assets/face-image\ 1.jpg);}
+    50% {background-image: url(../assets/face-image\ 2.jpg);}
+    100% {background-image: url(../assets/face-image\ 3.jpg);}
+}
+
+.picture-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
+
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.picture-text {
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.picture-text span {
+    margin: 0px 20px;
+}
+
+.picture-tit {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+div.slide-down {
+    overflow: hidden;
+}
+
+div.slide-down p {
+    animation: slide-down 1s ;
+    margin-top: 0%;
+}
+
+@keyframes slide-down {
+    from{
+        margin-top: -5%;
+        height: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 50%;
+    }
+}
+
+.tits::before {
+    content: "Massage Treatment";
+    animation: animate ease-in-out infinite 30s;
+}
+
+@keyframes animate {
+    10% {
+        content: "Massage Treatment";
+    }
+    50% {
+        content: "Facial Treatment";
+    }
+    100% {
+        content: "Cellulite Treatment";
+    }
+}
+
+.picture-content {
+    width: 57%;
+    margin: 35px 0px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.appointment {
+    margin: 15px 0px;
+    padding: 15px;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+div.slide-up {
+    overflow: hidden;
+}
+
+div.slide-up p {
+    animation: slide-up 1s;
+    margin-top: 0%;
+}
+
+@keyframes slide-up {
+    from{
+        margin-top: 40%;
+        height: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 50%;
+    }
+}
+
+.appointment a {
+    color: white;
+    text-decoration: none;
+}
+
+.appointment:hover {
+    background-color: #f56649;
+}
+
+.picture-one {
+    width: 100%;
+    background-image: url(../assets/face-image\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture-two {
+    width: 100%;
+    background-image: url(../assets/face-image\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* picture section ends here */
+
+/* aboutus section starts here */
+
+.aboutus {
+   margin: 180px 0px; 
+}
+
+.aboutus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutus-pic {
+    width: 48%;
+    height: 540px;
+    background-image: url(../assets/aboutus-pic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutus-content {
+    width: 49%;
+}
+
+.aboutus-tit {
+    background-color: rgb(252, 237, 239);
+    width: 15%;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: #F9A392;
+    font-weight: 600;
+}
+
+.aboutus-tits {
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.aboutus-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.words-line {
+    height: 70px;
+    border: 1px solid #F9A392;
+    font-size: 150px;
+}
+
+.words-contents {
+    width: 95%;
+    margin-bottom: 30px;
+    color: gray;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.aboutus-content button {
+    background-color: rgb(252, 237, 239);
+    width: 47%;
+    padding: 30px 0px;
+    border: none;
+    color: #F9A392;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients {
+    color: black;
+    font-size: 17px;
+}
+
+/* aboutus section ends here */
+
+/* service section starts here */
+
+.service-tit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-tits {
+    background-color: rgb(252, 237, 239);
+    padding: 5px;
+    color: #F9A392;
+    font-weight: 600;
+}
+
+.pictures {
+    width: 100%;
+    background-image: url(../assets/face-image\ 1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pictures-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.pictures-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictures-content {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: transform 500ms;
+}
+
+.service-img-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 300px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.service-img-container {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.services-tit {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#servicing {
+    padding: 0px 0px 0px 80px;
+    display: none;
+}
+/* 
+@keyframes move-up {
+    from{
+        height: 280px;
+    }
+    to {
+       height: 200px;
+    }
+}
+
+@keyframes move-down {
+    from{
+        height: 200px;
+    }
+    to {
+       height: 280px;
+    }
+} */
+
+.servicing-content a{
+    background-color: #F9A392;
+    width: 100px;
+    padding: 10px;
+}
+
+.servicing-content :hover {
+    background-color: #f56649;
+}
+
+.servicing-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.service-img {
+    background-image: url(../assets/facial\ theraphy.jpg);
+}
+
+.service-imgs {
+    background-image: url(../assets/skin\ care.jpg);
+}
+
+.service-image {
+    background-image: url(../assets/stream\ bath.jpg);
+}
+
+.service-images {
+    background-image: url(../assets/face\ masking.jpg);
+}
+
+.service-pic {
+    background-image: url(../assets/body\ massage.jpg);
+}
+
+.service-pics {
+    background-image: url(../assets/stone\ theraphy.jpg);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-appoint {
+    background-color: rgba(24, 24, 24, 0.6);
+    width: 50%;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-appoint h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 43px;
+}
+
+.myform div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms {
+    background-color: rgba(24, 24, 24, 0.1);
+    width: 230px;
+    margin: 8px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    border: 1px solid white;
+    color: rgb(173, 173, 173);
+    font-size: 17px;
+}
+
+.myform select {
+    width: 250px;
+}
+
+.myform button {
+    background-color: #F9A392;
+    width: 250px;
+    padding-left: 0px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.myform button a {
+    color: white;
+    text-decoration: none;
+}
+
+.myform button:hover {
+    background-color: #f56649;
+}
+
+/* service section ends here */
+
+/* openhours section starts here */
+
+.openhours {
+   margin: 180px 0px; 
+}
+
+.openhours-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.openhours-pic {
+    width: 48%;
+    height: 580px;
+    background-image: url(../assets/stone\ theraphy\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+
+.openhours-content {
+    background-color: rgb(252, 237, 239);
+    width: 49%;
+    padding: 40px 0px 40px 50px;
+    position: absolute;
+    left: 41%;
+}
+
+.openhours-tit {
+    background-color: #F9A392;
+    width: 20%;
+    margin-bottom: 10px;
+    padding: 7px;
+    color: white;
+    font-weight: 600;
+}
+
+.openhours-tits {
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.openhours-contents {
+    width: 95%;
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.days-time {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #F9A392;
+}
+
+.days {
+    margin-left: 20px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    border-color: #F9A392;
+}
+
+.bookings {
+    width: 18%;
+    margin-top: 30px;
+}
+
+.bookings p {
+    background-color: #F9A392;
+    padding: 10px;
+}
+
+.bookings :hover {
+    background-color: #f56649;
+}
+
+.bookings a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* openhours section ends here */
+
+/* billing section starts here */
+
+.billing-images {
+    display: flex;
+}
+
+.billing-pic {
+    width: 40%;
+    height: 600px;
+    background-image: url(../assets/pricing\ 1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.billing-pics {
+    width: 60%;
+    background-image: url(../assets/face-image\ 2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.billing-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 600px;
+}
+
+.billing-board {
+    background-color: rgb(252, 237, 239);
+    width: 60%;
+    height: 450px;
+    padding: 40px 40px 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 517%;
+    left: 30%;
+}
+
+.billing-board_one {
+    background-color: white;
+    width: 44%;
+    height: 420px;
+    padding: 20px 20px 0px 20px;
+}
+
+.plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.billing-contents {
+    font-size: 55px;
+}
+
+.plan-tit {
+    color: #F9A392;
+    font-size: 20px;
+}
+
+.billing-contents span {
+    color: rgb(68, 68, 68);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.plan-line {
+    width: 100%;
+    margin: 30px 0px;
+    border: 1px solid #F9A392;
+}
+
+.plan-tits {
+    margin-bottom: 15px;
+    color: rgb(92, 92, 92);
+    font-size: 18px;
+}
+
+.fa-check {
+    margin-right: 8px;
+    color: green;
+    font-size: 22px;
+}
+
+.plan-bookings {
+    width: 33%;
+    margin-top: 30px;
+}
+
+.plan-bookings p {
+    background-color: #F9A392;
+    padding: 10px;
+}
+
+.plan-bookings :hover {
+    background-color: #f56649;
+}
+
+.plan-bookings a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* billing section ends here */
+
+/* specialist section starts here */
+
+.specialist {
+    margin: 180px 0px;
+}
+
+.specialist-tit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialist-tits {
+    background-color: rgb(252, 237, 239);
+    padding: 5px;
+    color: #F9A392;
+    font-weight: 600;
+}
+
+.specialist-pictures {
+   display: flex;
+   justify-content: space-around;
+}
+
+.specialist-bg {
+    width: 23%;
+    background-color: #F9A392;
+}
+
+.spec-pics {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.specialist-img {
+    background-image: url(../assets/team-1.jpg);
+}
+
+.specialist-image {
+    background-image: url(../assets/team-2.jpg);
+}
+
+.specialist-imgs {
+    background-image: url(../assets/team-3.jpg);
+}
+
+.specialist-images {
+    background-image: url(../assets/team-4.jpg);
+}
+
+.spec-details {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.small {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* specialist section ends here */
+
+/* testimonial section starts here */
+
+.testimonial {
+    margin-bottom: 180px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial-pic {
+    width: 48%;
+    height: 540px;
+    background-image: url(../assets/testimonial.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial-content {
+    width: 49%;
+}
+
+.testimonial-tit {
+    background-color: rgb(252, 237, 239);
+    width: 18%;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: #F9A392;
+    font-weight: 600;
+}
+
+.testimonial-tits {
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.testimonial-content div {
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.test-det {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-pic {
+    width: 70px;
+    height: 70px;
+    background-image: url(../assets/testimonial-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.test-name {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    line-height: 30px;
+}
+
+.fa-quote-right {
+    color: #F9A392;
+    font-size: 80px;
+}
+
+/* testimonial section ends here */
+
+/* footer starts here */
+
+.footer {
+    background-color: #211E1C;
+    padding: 0px 0px 30px 0px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-spa {
+    width: 45%;
+    padding-top: 120px;
+    color: rgb(211, 211, 211);
+    font-size: 18px;
+}
+
+.about-spa p {
+    margin-bottom: 20px;
+}
+
+.about-spa i {
+    margin-right: 10px;
+}
+
+.footer-name a{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-det {
+    line-height: 25px;
+}
+
+.footer-name span {
+    color: #F9A392;
+}
+
+.footer-app {
+    margin-bottom: 100px;
+}
+
+.footer-app i {
+    background-color: #F9A392;
+    padding: 14px;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-app i:hover {
+    background-color: #f56649;
+}
+
+.footer-line {
+    border: 1px solid rgb(145, 145, 145);
+    height: 550px;
+}
+
+.links {
+    width: 45%;
+    padding-top: 120px;
+}
+
+.links-container {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-tit {
+    padding-bottom: 20px;
+    color: rgb(211, 211, 211);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.links-content p {
+    margin-bottom: 13px;
+}
+
+.links-content a {
+    color: rgb(211, 211, 211);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.links-content a:hover {
+    text-decoration: underline;
+}
+
+.links-content i {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.link-content {
+    margin-right: 100px;
+}
+
+.newsletter {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.newsletter p {
+    margin-bottom: 25px;
+}
+
+.footer-form input[type = email] {
+    border: none;
+    padding: 18px 200px 18px 20px;
+    font-size: 17px;
+}
+
+.footer-form span {
+    background-color: #F9A392;
+    padding: 19px 18px 20px 18px;
+    font-size: 16px;
+}
+
+.footer-form span:hover {
+    background-color: #f56649;
+}
+
+.footer-form span a {
+    color: white;
+    text-decoration: none;
+}
+
+.lines {
+    width: 99.8%;
+    margin-bottom: 30px;
+    border: 1px solid rgb(145, 145, 145);
+}
+
+.site a {
+    color: #F9A392;
+    text-decoration: none;
+}
+
+.site a:hover {
+    color: #f56649;
+    text-decoration: underline;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+/* footer ends here */
+
+/*  about-picture section starts here */
+
+.about-picture {
+    background-image: url(../assets/face-image\ 3.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 120px 0px 120px 0px;
+}
+
+.about-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.about-content p {
+    margin: 0px 10px;
+}
+
+.about-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+.about-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/*  about-picture section ends here */
+
+.service-space {
+    margin-top: 150px;
+}
+
+.testimonial-space {
+    margin-top: 150px;
+}
+
+.billing-space {
+    margin-top: 150px;
+}
+
+.billing-boards {
+    background-color: rgb(252, 237, 239);
+    width: 60%;
+    height: 450px;
+    padding: 40px 40px 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 105%;
+    left: 30%;
+}
+
+.app-space {
+    margin: 130px 0px;
+}
+
+.pictures {
+    width: 100%;
+    background-image: url(../assets/face-image\ 1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pictures-background {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.service-appoint {
+    background-color: rgba(24, 24, 24, 0.6);
+    width: 50%;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-appoint h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 43px;
+}
+
+.myform div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms {
+    background-color: rgba(24, 24, 24, 0.1);
+    width: 230px;
+    margin: 8px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    border: 1px solid white;
+    color: rgb(173, 173, 173);
+    font-size: 17px;
+}
+
+.myform select {
+    width: 250px;
+}
+
+.myform button {
+    background-color: #F9A392;
+    width: 250px;
+    padding-left: 0px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.myform button a {
+    color: white;
+    text-decoration: none;
+}
+
+.myform button:hover {
+    background-color: #f56649;
+}
