@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Adedayooyinkansola
 - 👀 I’m interested in creating websites
-- 🌱 I’m currently learning javascript, python and Java
+- 🌱 I’m currently learning Javascript, Python and Java
 - 💞️ I’m looking to collaborate with people on creating many websites
 - 📫 How to reach me: You can reach me on my whatsapp number; 07990722268 and also on my email; horneybi123@gmail.com.
 
